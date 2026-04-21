@@ -1,0 +1,28 @@
+body {
+    background-color: #f4ece1; /* color crema, provocional */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #8b4513; /* Color café madera, creo que lo voy a cambiar */
+    border-bottom: 2px solid #8b4513;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; /* sin los puntos de la lista */
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
