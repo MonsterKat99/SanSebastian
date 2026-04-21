@@ -1,34 +1,45 @@
-/* Reset básico para que todo se vea igual en todos los navegadores */
+
+*/* CONFIGURACIÓN GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --dorado: #d4a373;
+    --oscuro: #1a1a1a;
+    --gris-claro: #f4f4f4;
+    --blanco: #ffffff;
+    --texto: #333333;
+}
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--blanco);
+    color: var(--texto);
     line-height: 1.6;
 }
 
-/* Navegación elegante */
+/*  NAVEGACIÓN TIKI  */
 header {
-    background: #fff;
-    padding: 20px 5%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: var(--oscuro);
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -37,25 +48,29 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
-    font-size: 0.9rem;
+    color: var(--oscuro);
+    font-size: 0.85rem;
+    font-weight: 600;
     text-transform: uppercase;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #d4a373; /* Un dorado suave */
+    color: var(--dorado);
 }
 
-/* Sección de Impacto (Hero) */
+/*  SECCIÓN HERO */
 .hero {
-    height: 60vh;
-    background: #2c2c2c; /* Aquí irá una foto después */
+    height: 80vh;
+    /* Ajusta la ruta si tu imagen se llama diferente */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/las-lajas.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,57 +79,123 @@ nav ul li a:hover {
     padding: 0 20px;
 }
 
+.hero-content span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    color: var(--dorado);
+    display: block;
+    margin-bottom: 15px;
+}
+
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-weight: 300;
 }
 
 .btn-main {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #d4a373;
+    padding: 15px 40px;
+    background: var(--dorado);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
 }
 
-/* Cuadrícula de artículos (Grid) */
+.btn-main:hover {
+    background: #bc8a5f;
+    transform: scale(1.05);
+}
+
+/* CONTENEDOR PRINCIPAL  */
 .container {
-    max-width: 1100px;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: 80px auto;
     padding: 0 20px;
 }
 
+/* GRID DE ARTÍCULOS  */
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
 }
 
 .card {
-    background: white;
-    border-radius: 10px;
+    background: var(--blanco);
+    border-radius: 0; /* Bordes */
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.4s;
+    border: 1px solid #eee;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 .card-img {
-    height: 200px;
-    background: #ddd; /* Espacio para la foto */
+    height: 250px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-text {
-    padding: 20px;
+    padding: 30px;
 }
 
 .card-text span {
-    color: #d4a373;
-    font-size: 0.8rem;
-    font-weight: bold;
+    color: var(--dorado);
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .card-text h3 {
-    margin: 10px 0;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--oscuro);
+}
+
+.card-text p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+    background: var(--oscuro);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVO  */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    header { flex-direction: column; gap: 20px; }
+    nav ul li { margin: 0 10px; }
 }
