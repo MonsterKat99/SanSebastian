@@ -68,7 +68,7 @@ nav ul li a:hover {
 .hero 
 {
     height: 80vh;
-    background-color: #1a1a1a; /* Fondo de respaldo si la imagen falla */
+    background-color: #1a1a1a; /* melos */
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Img/las-lajas.jpg.jpg');
     background-size: cover;
     background-position: center;
