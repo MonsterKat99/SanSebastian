@@ -23,7 +23,7 @@ body {
 
 /*  NAVEGACIÓN TIKI  */
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(100, 128, 56, 0.932);
     padding: 25px 8%;
     display: flex;
     justify-content: space-between;
