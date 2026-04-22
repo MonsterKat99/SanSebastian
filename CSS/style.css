@@ -202,3 +202,60 @@ footer p {
     nav ul li { margin: 0 10px; }
 
 }
+
+.menu-destacado {
+    padding: 80px 8%;
+    background-color: var(--blanco);
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-header span {
+    color: var(--dorado);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.menu-header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px 60px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.item-info h3 {
+    font-size: 1.1rem;
+    color: var(--oscuro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item-info p {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.price {
+    color: var(--dorado);
+    font-weight: bold;
+}
