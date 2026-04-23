@@ -5,7 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
+/* Uultimo toque hibrido nashe */
+body {
+    animation: fadeInPage 1s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 :root {
     --dorado: #d4a373;
     --oscuro: #5f9b28;
