@@ -318,15 +318,14 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
-/* HERO INICIO - FULL SCREEN */
+
 .hero-inicio {
-    height: 95vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../Img/las-lajas-inicio.jpg'); /* ya esta tiki menú */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 8%;
+    height: 95vh; 
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.6)), url('../Img/las-lajas-inicio.jpg');
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    align-items: center; 
 }
 
 .hero-inicio-content h1 {
