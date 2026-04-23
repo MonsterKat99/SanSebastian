@@ -503,3 +503,130 @@ footer p {
     .masonry-item.wide { grid-column: span 1; }
     .masonry-wrapper { padding: 20px; }
 }
+/* ESTILOS PÁGINA CONTACTO */
+.contacto-hero {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    padding: 40px 0;
+}
+
+.info-item {
+    margin-bottom: 40px;
+}
+
+.info-item .label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dorado);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--oscuro);
+}
+
+.redes-sociales-contacto {
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: var(--oscuro);
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    color: var(--dorado);
+}
+
+.map-placeholder {
+    height: 100%;
+    min-height: 400px;
+    background-color: #1b3022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border: 1px solid var(--dorado);
+}
+/* Nuevas cosas para nueva seccion*/
+.info-item {
+    margin-bottom: 50px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1b3022; /* verde nuevito */
+    color: var(--dorado);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid var(--dorado);
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--dorado);
+    color: #1b3022;
+}
+
+.redes-especificas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link-item {
+    text-decoration: none;
+    display: block;
+}
+
+.social-link-item .platform {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--oscuro);
+    transition: 0.3s;
+}
+
+.social-link-item .handle {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.social-link-item:hover .platform {
+    color: var(--dorado);
+    padding-left: 10px; /* efecto sacado de gemini, increible, no me juzguen */
+}
