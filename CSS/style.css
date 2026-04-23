@@ -440,7 +440,7 @@ footer p {
 .masonry-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 200px; /* Base para el crecimiento vertical */
+    grid-auto-rows: 200px; 
     grid-auto-flow: dense;
     gap: 20px;
 }
@@ -452,13 +452,13 @@ footer p {
     background-color: #1b3022;
 }
 
-/* Tamaños especiales */
+
 .masonry-item.tall {
-    grid-row: span 2; /* Ocupa 2 filas */
+    grid-row: span 2; 
 }
 
 .masonry-item.wide {
-    grid-column: span 2; /* Ocupa 2 columnas */
+    grid-column: span 2; 
 }
 
 .masonry-item img {
@@ -628,4 +628,27 @@ footer p {
 .social-link-item:hover .platform {
     color: var(--dorado);
     padding-left: 10px; /* efecto sacado de gemini, increible, no me juzguen */
+}
+
+/* --- ARREGLO DE LEGIBILIDAD INICIO --- */
+.hero-inicio-content span {
+    color: var(--dorado) !important;
+    background: none !important;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+.hero-inicio-content h1 {
+    background: none !important;
+    color: white !important;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
+}
+.hero-inicio-content p {
+    color: #ffffff !important; 
+    background: none !important; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 550px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,1); 
 }
