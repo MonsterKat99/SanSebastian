@@ -85,7 +85,7 @@ nav ul li a:hover {
 .hero-content span {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 8px; /* Espaciado de lujo */
+    letter-spacing: 8px; /* Espaciado  */
     font-size: 0.8rem;
     color: var(--dorado);
     border-top: 1px solid var(--dorado);
@@ -97,11 +97,11 @@ nav ul li a:hover {
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem; /* Más imponente */
+    font-size: 5rem; /* hola amiguitos  */
     font-weight: 400;
-    font-style: italic; /* El estilo itálico en Playfair se ve muy pro */
+    font-style: italic; /* cambios de estilo */
     margin-bottom: 10px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Sombra suave para legibilidad */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Sombra suave  */
 }
 .hero p {
     font-size: 1.2rem;
@@ -228,7 +228,7 @@ footer p {
 .menu-header h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #1b3022; /* Usamos el mismo verde oscuro para coherencia */
+    color: #1b3022; /*  verde oscuro  */
     margin-top: 10px;
 }
 
@@ -309,7 +309,7 @@ footer p {
 /* HERO INICIO - FULL SCREEN */
 .hero-inicio {
     height: 95vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../Img/las-lajas-inicio.jpg'); /* Busca una foto diferente a la del menú */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../Img/las-lajas-inicio.jpg'); /* ya esta tiki menú */
     background-size: cover;
     background-position: center;
     display: flex;
