@@ -306,3 +306,106 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* HERO INICIO - FULL SCREEN */
+.hero-inicio {
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../Img/las-lajas-inicio.jpg'); /* Busca una foto diferente a la del menú */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-inicio-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--blanco);
+    max-width: 700px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.btn-minimal {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid var(--dorado);
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    transition: 0.4s;
+    margin-top: 30px;
+}
+
+.btn-minimal:hover {
+    background: var(--dorado);
+    color: var(--oscuro);
+}
+
+/* SECCIÓN HISTORIA */
+.historia-breve {
+    padding: 100px 20px;
+    text-align: center;
+    background: #fdfdfd;
+}
+
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.linea-dorada {
+    width: 60px;
+    height: 2px;
+    background: var(--dorado);
+    margin: 20px auto;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1b3022;
+}
+
+/* PUERTAS GRID */
+.puertas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 500px;
+}
+
+.puerta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.puerta:hover {
+    filter: saturate(1.2);
+}
+
+.puerta-text {
+    text-align: center;
+    color: white;
+}
+
+.puerta-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.puerta-text span {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: var(--dorado);
+}
